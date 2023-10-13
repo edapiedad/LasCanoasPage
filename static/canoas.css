@@ -1,0 +1,285 @@
+/* Importacion de fuentes */
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+/* Fin de importacion de fuentes */
+
+/*Definicion de barra de navegacion */
+#mainNavigation a {
+    font-family: 'Cabin', sans-serif;
+    font-size:14px;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    text-shadow:1px 1px 2px rgba(0,0,0,0.4)
+  }
+  
+  .dropdown-menu {
+    background:#03727d
+  }
+  a.dropdown-toggle {
+    color:#dfdfdf !important
+  }
+  a.dropdown-item:hover {
+    color:#03727d !important
+  }
+  .nav-item a{
+    color:#dfdfdf;
+  }
+  .nav-item a:hover {
+    color:#fff
+  }
+  .nav-item{
+    min-width:12vw;
+  }
+  #mainNavigation {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:123;
+    padding-bottom:120px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
+  background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+  }
+  #navbarNavDropdown.collapsing .navbar-nav,
+  #navbarNavDropdown.show .navbar-nav{
+    background:#037582;
+    padding:12px;
+  }
+/*Fin de definicion de barra de navegacion */
+
+body {
+	display: flex;
+    background: url('/static/fondo.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	min-height: 100vh;
+	align-items: center;
+	justify-content: center;
+  z-index: 1;
+}
+
+
+/* definicion de efecto wave */
+.content {
+	position: relative;
+}
+
+.content h2 {
+	color: #fff;
+	font-size: 13vw;
+	position: absolute;
+	transform: translate(-50%, -50%);
+}
+
+.content h2:nth-child(1) {
+	color: transparent;
+	-webkit-text-stroke: 3px #0c5485;
+}
+
+.content h2:nth-child(2) {
+	color: #0c5485;
+	animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+	0%,
+	100% {
+		clip-path: polygon(
+			0% 45%,
+			16% 44%,
+			33% 50%,
+			54% 60%,
+			70% 61%,
+			84% 59%,
+			100% 52%,
+			100% 100%,
+			0% 100%
+		);
+	}
+
+	50% {
+		clip-path: polygon(
+			0% 60%,
+			15% 65%,
+			34% 66%,
+			51% 62%,
+			67% 50%,
+			84% 45%,
+			100% 46%,
+			100% 100%,
+			0% 100%
+		);
+	}
+}
+/* fin de definicion de efecto wave */
+
+/* Link de pagina de instagram */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .sm a{
+    display: inline-flex;
+    text-decoration: none;
+    font-size: 36px;
+    width: 60px;
+    height: 60px;
+    color: #f0f0f0;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0 7px;
+  }
+  .sm a::before{
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 25%;
+    z-index: -1;
+    transition: transform .3s ease-in;
+  }
+  .sm a:nth-child(1)::before{
+    background: #0c5485;
+  }
+  .sm a:nth-child(2)::before{
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  }
+  .sm a:nth-child(3)::before{
+    background: #1c96e9;
+  }
+  .sm a:nth-child(4)::before{
+    background: #f70000;
+  }
+  .sm a:nth-child(5)::before{
+    background: #046596;
+  }
+  .sm a:hover::before{
+    transform: scale(0);
+  }
+  .sm a i{
+    transition: transform .3s ease-in;
+  }
+  .sm a:nth-child(1):hover i{
+    background: #f5f6f7;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(1.5);
+  }
+  .sm a:nth-child(2):hover i{
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(1.5);
+  }
+  .sm a:nth-child(3):hover i{
+    background: #1c96e9;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(1.5);
+  }
+  .sm a:nth-child(4):hover i{
+    background: #f70000;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(1.5);
+  }
+  .sm a:nth-child(5):hover i{
+    background: #046596;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(1.5);
+  }
+/* Fin de link de pagina de instagram */
+
+/* Añadir imagen centrada */
+.imagen-centrada {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 70%;
+  border-radius: 100px; /* Ajusta este valor para cambiar el grado de redondeo */
+  transition: transform .2s; /* Animación */
+}
+
+.imagen-centrada:hover {
+  transform: scale(1.1); /* (150% de tamaño de imagen original) */
+}
+/* Fin de añadir imagen centrada */
+
+/* Genera espaciado de 50px entre los elementos */
+.espaciado {
+  margin-top: 100px;
+}
+/* Fin de genera espaciado de 50px entre los elementos */
+
+/*genera texto sombreado*/
+.texto-sombreado {
+  text-shadow: 2px 2px 4px #000000;
+}
+/*fin de genera texto sombreado*/
+
+/*genera recuadros material desing*/
+.texto-blanco {
+  color: rgb(255, 255, 255);
+}
+
+.recuadro-material {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+/*fin de genera recuadros material desing*/
+
+/*cambia el fondo de la pagina*/
+.body-pagina-2 {
+  background: url('/static/Morrocoy.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/*fin de cambia el fondo de la pagina*/
+
+/*Transiciones*/
+.loading-screen {
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  background-color: #0c5485;
+  width: 0%;
+  height: 100%;
+}
+
+.load-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 100;
+  pointer-events: none;
+}
+
